@@ -115,27 +115,19 @@
     }
 
     /* Form container adjustments */
-    .cleaning-form-container, .immobiliendossier-form-container {
-        width: 90% !important; /* Make form responsive */
-        max-width: 360px !important;
-        margin: 15px auto !important;
-        background: #F4C139 !important; /* Ensure background color is consistent */
-        box-shadow: 0 0 0 2px #B38B0F !important;
-        border-radius: 8px !important;
-        padding: 15px !important;
+    .cleaning-form-container {
+        width: 270px !important; /* Adjust 1st form size */
     }
 
     /* Company logo size inside form */
     .company-logo {
-        width: 80px !important;
-        height: auto !important;
+        width: 100px !important;
     }
 
     /* Adjust form title width and font size */
     .form-title {
-        width: auto !important;          
+        width: 250px !important;          
         font-size: 18px !important;
-        color: #fff !important;
     }
 
     .contact-form-container { 
@@ -156,53 +148,34 @@
 
 /* Extra small screens (like small phones) */
 @media (max-width: 580px) {
-    .cleaning-form-container, .immobiliendossier-form-container {
-        width: 90% !important;
-        max-width: 400px !important;
-        margin: 10px auto !important;
-        padding: 15px !important;
-        display: block !important;
-        box-shadow: none !important;
-        border-radius: 8px !important;
+    .cleaning-form-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
     }
     
     .top-row {
         display: flex !important;
+        flex-direction: column !important;
         align-items: center !important;
-        margin-bottom: 15px !important;
+        justify-content: center !important;
     }
     
     .company-logo {
-        width: 70px !important;
+        margin-bottom: 10px !important;
+        max-width: 100% !important;
         height: auto !important;
-        margin-right: 10px !important;
     }
     
     .form-title {
         font-size: 1.2rem !important;
         font-weight: bold !important;
-        text-align: left !important;
     }
     
     #houseType {
-        width: 100% !important;
-    }
-    
-    /* Make sure form inputs are full width on mobile */
-    .form-group {
-        margin-bottom: 15px !important;
-    }
-    
-    input, textarea, select {
-        width: 100% !important;
-        padding: 8px !important;
-    }
-    
-    /* Ensure submit button is styled properly */
-    .submit-btn, button[type="submit"] {
-        width: 100% !important;
-        padding: 10px !important;
-        margin-top: 10px !important;
+        width: 220px;
     }
 }
 
@@ -227,7 +200,7 @@
 }
 
 /* Form styling for larger screens */
-.cleaning-form-container, .immobiliendossier-form-container {
+.cleaning-form-container {
     font-family: Arial, sans-serif;
     max-width: 600px;
     margin: 40px auto;
@@ -235,6 +208,7 @@
     background: #F4C139;
     box-shadow: 0 0 0 2px #B38B0F; 
     border-radius: 8px;
+    margin: -10px;
 }
 
 .top-row {
